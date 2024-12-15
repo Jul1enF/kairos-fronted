@@ -2617,10 +2617,6 @@ let SortedApeCodes=[
             label:"Promotion immobilière",
             subcategories:[
               {
-                "id": "41.10",
-                "label": "Promotion immobilière"
-              },
-              {
                 "id": "41.10A",
                 "label": "Promotion immobilière de logements"
               },

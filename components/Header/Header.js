@@ -34,9 +34,9 @@ function Header() {
                         />
                     </Link>
                 </div>
-                <h1 className={styles.kairos} id='title'>KAIROS</h1>
+                <h1 className={styles.kairos} id='title' onClick={()=>router.push('/')}>KAIROS</h1>
                 <div className={styles.buttonsContainer}>
-                    <a className={styles.link} href='/' id='AboutLink'>À Propos</a>
+                    {/* <a className={styles.link} href='/' id='AboutLink'>À Propos</a> */}
                     <div className={styles.headerRight}>
                         {!user.token && !isLoginPage ? (
                             <button onClick={handleSignupClick} className={styles.signUpBtn}>

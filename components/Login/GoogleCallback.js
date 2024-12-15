@@ -38,7 +38,7 @@ function GoogleCallback() {
               email: data.email,
             }));
             // Rediriger vers le tableau de bord
-            window.location.href = 'https://kairos-frontend-six.vercel.app/dashboard';
+            window.location.href = `${process.env.NEXT_PUBLIC_FRONT_ADDRESS}/dashboard`
           }
         })
 

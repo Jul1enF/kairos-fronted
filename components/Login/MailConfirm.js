@@ -17,6 +17,7 @@ function MailConfirm(){
     console.log(user)
 
     const handleSubmit = () => {
+      console.log("continue click")
         fetch(`${url}/users/info-user`,{
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },

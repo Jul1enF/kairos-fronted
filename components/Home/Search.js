@@ -40,10 +40,14 @@ function Search() {
     // Fonction appelée quand on clique sur recherche
 
     const searchClick = ()=>{
+        
         const codeApe = convertStringApeToCode(activityTypped)
         let token
         user.token ? token = true : token=false
         const email=user.email
+
+        console.log("Code ape :", codeApe)
+        console.log("Activity typped :",activityTypped)
 
         if (!codeApe){return}
         const locationSplit = locationTypped.split(', ')
@@ -91,7 +95,6 @@ function Search() {
         })
     }
 
-    console.log(search)
 
     // Fonction appelée en tapant du texte dans 'Secteur Géographique' pour fetch api adresse et remplir la liste de l'autoComplete
 
@@ -134,8 +137,8 @@ function Search() {
   return (
     <div className={styles.container}>
         <div className={styles.searchContainer}>
-            <p className={styles.text}>“C’est quoi le statut d’entrepreneur individuel? Est ce que j’ai des concurrents?”<br></br>
-                <span className={styles.titleText}>Difficile de se lancer?<br></br><span className={styles.title}>KAIROS </span>est fait pour vous!</span></p>
+            <p className={styles.text}>“C’est quoi le statut d’entrepreneur individuel ? Est ce que j’ai des concurrents ?”<br></br>
+                <span className={styles.titleText}>Difficile de se lancer ?<br></br><span className={styles.title}>KAIROS </span>est fait pour vous !</span></p>
         </div>
         <div className={styles.formContainer}>
         <Modal 

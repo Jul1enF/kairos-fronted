@@ -9,7 +9,8 @@
     min-width: 10vw;
     max-width: 10vw;
     position: absolute;
-    left: 45vw; 
+    left: 45vw;
+    cursor: pointer;
 }
 
 .container{
@@ -68,6 +69,11 @@
 .info{
     display: flex;
     align-items: center;
+}
+
+.info p {
+    padding-top: 5px;
+    margin-right: 10px;
 }
 /* ::::::::::::::::::::::::::::::::RESPONSIVE :::::::::::::::::::::::::::::::::::::::::::::*/
 @media (max-width: 900px) {
