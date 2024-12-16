@@ -64,8 +64,13 @@ function SignIn() {
             }
         })
     }
-    const handleGoogleLogin = () => {
-    window.location.href = `${url}/users/auth/google`
+
+
+    const handleGoogleLogin = async () => {
+        
+    const response = await fetch(`${url}/users/google`, {method:'POST'})
+       const data = await response.json()
+       location.assign(data.url)
     }
 
     return (
