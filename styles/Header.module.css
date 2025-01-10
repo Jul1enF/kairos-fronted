@@ -77,6 +77,16 @@
 }
 /* ::::::::::::::::::::::::::::::::RESPONSIVE :::::::::::::::::::::::::::::::::::::::::::::*/
 @media (max-width: 900px) {
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #F8E9A9;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
     .info p{
         display: none;
     }

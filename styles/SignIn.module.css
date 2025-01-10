@@ -93,4 +93,55 @@
     .container {
       width: 70%;
     }
+
+    .input {
+      height: 40px;
+      margin-bottom: 15px;
+      border: 1px #163050 solid;
+      border-radius: 3px;
+      background-color: #E6E6E6;
+      font-weight: 600;
+      padding: 10px;
+      width : 80%;
+      color: #676767;
+      font-size: 16px;
+    }
+
+    .pwdInput {
+      height: 40px;
+      margin-bottom: 15px;
+      border: 1px #163050 solid;
+      border-radius: 3px;
+      background-color: #E6E6E6;
+      font-weight: 600;
+      padding: 10px;
+      width : 100%;
+      color: #676767;
+      font-size: 16px;
+    }
+
+    .buttonGoogle{
+      height: 40px;
+      width: 100%;
+      background-color: #163050;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+      border: none;
+      font-size: 13px;
+    }
+
+    .button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      width: 70%;
+      background-color: #163050;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+      border: none;
+      font-size: 13px;
+    }
 }
