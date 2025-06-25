@@ -83,7 +83,7 @@ function Search() {
         }
 
         fetch(`${url}/searches/newSearch`, {
-            method: 'PUT',
+            method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
                 city: locationWithoutSpace,
@@ -95,7 +95,7 @@ function Search() {
         })
             .then(response => response.json())
             .then(data => {
-                //console.log(data)
+                console.log("DATA :", data)
                 dispatch(addSearch(data.result))
                 // À rechecker en faisant un console log de user dans result
                 if (data.searchForeignKey) { dispatch(addIdOfASearch(data.searchForeignKey)) }
